@@ -1,4 +1,3 @@
-/* CSS Global */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,19 +8,17 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Para que o footer fique na parte inferior */
-    padding-bottom: 80px; /* Espaço para o footer */
+    min-height: 100vh;
+    padding-bottom: 80px;
 }
 
-/* HEADER */
 header {
     display: flex;
-    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 
 header img, footer img {
     width: 150px;
@@ -30,7 +27,7 @@ header img, footer img {
 }
 
 nav {
-    margin-left: auto; /* Puxa o menu para a direita */
+    margin-left: auto;
 }
 
 nav ul {
@@ -49,11 +46,10 @@ nav a:hover {
     color: red;
 }
 
-/* FORMULÁRIO */
 form {
-    padding: 100px 20px 60px; /* Padding superior para afastar do header */
+    padding: 100px 20px 60px;
     max-width: 600px;
-    margin: 0 auto; /* Centraliza o formulário */
+    margin: 0 auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -89,7 +85,6 @@ form button:hover {
     background-color: #cc0000;
 }
 
-/* FOOTER */
 footer {
     background-color: #e60012;
     padding: 20px;
@@ -102,9 +97,9 @@ footer {
 
 .footer {
     display: flex;
-    justify-content: flex-start; /* Mantém os itens na esquerda */
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     color: white;
@@ -144,9 +139,8 @@ footer {
     }
 }
 
-h1{
+h1 {
     text-align: center;
     color: red;
     padding-bottom: 50px;
 }
-
