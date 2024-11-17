@@ -14,12 +14,11 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 
 header img, footer img {
     width: 150px;
@@ -50,15 +49,15 @@ nav a:hover {
 }
 
 .Destaques .swiper {
-    width: 100%; /* Garante que o swiper ocupe 100% da largura disponível */
-    max-width: 900px; /* Define uma largura máxima para o swiper */
-    height: 600px; /* Altura fixa para manter a proporção */
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
     margin: 50px auto;
     position: relative;
     border-radius: 40px;
 }
 
-.Destaques h1{
+.Destaques h1 {
     color: red;
     text-align: center;
 }
@@ -80,16 +79,15 @@ nav a:hover {
     border-radius: 40px;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .Destaques .swiper {
-        height: 400px; /* Ajusta a altura para telas menores */
+        height: 400px;
     }
 }
 
 @media (max-width: 480px) {
     .Destaques .swiper {
-        height: 300px; /* Ajusta a altura para telas muito pequenas */
+        height: 300px;
     }
 }
 
@@ -137,13 +135,13 @@ nav a:hover {
 
 .card .img span {
     text-transform: uppercase;
-    font-size: 24px;  /* Aumenta o tamanho da fonte para dar mais destaque */
-    font-weight: 700;  /* Torna o texto mais grosso para maior contraste */
+    font-size: 24px;
+    font-weight: 700;
     font-style: italic;
     transition: all 0.5s;
-    color: black;  /* Deixa o texto preto */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Adiciona sombra branca ao texto para destacá-lo */
-    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras para um visual mais impactante */
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
 }
 
 .card-jogos .content, .card-consoles .content {
@@ -174,14 +172,13 @@ nav a:hover {
 }
 
 .card-jogos .img {
-    background-image: url('imgs/capa.jpg'); /* Exemplo de imagem para "Jogos" */
+    background-image: url('imgs/capa.jpg');
 }
 
 .card-consoles .img {
-    background-image: url('imgs/linha-do-tempo-nintendo.webp'); /* Exemplo de imagem para "Consoles" */
+    background-image: url('imgs/linha-do-tempo-nintendo.webp');
 }
 
-/* Responsividade */
 @media (max-width: 800px) {
     .card {
         width: 100%;
@@ -254,7 +251,7 @@ nav a:hover {
     flex-direction: column;
     gap: 60px;
     padding: 32px 8%;
-    padding-bottom: 40px;  /* Adiciona 40px de espaço abaixo da seção de depoimentos */
+    padding-bottom: 40px;
 }
 
 .depoimentos_header {
@@ -279,8 +276,8 @@ nav a:hover {
 }
 
 .depoimentos .swiper {
-    width: 650px;  
-    height: 450px; 
+    width: 650px;
+    height: 450px;
     padding-bottom: 60px;
     border-radius: 40px;
 }
@@ -346,9 +343,9 @@ footer {
 
 .footer {
     display: flex;
-    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
-    align-items: center;      /* Alinha o conteúdo verticalmente */
-    gap: 40px;                /* Espaçamento entre os itens */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     width: 100%;
 }
 
@@ -373,11 +370,11 @@ footer .footer-text {
     text-align: center;
     color: white;
     font-size: 14px;
-    margin: 0 auto;    /* Garante que o texto seja centralizado */
+    margin: 0 auto;
 }
 
 footer .footer-link {
-    margin-left: auto; /* Isso coloca o link à direita */
+    margin-left: auto;
 }
 
 footer .footer-link a {
@@ -405,11 +402,11 @@ footer p {
     }
 
     footer .footer-link {
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 }
 
-.Depoimentos{
+.Depoimentos {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -418,7 +415,7 @@ footer p {
     font-size: 16px;
 }
 
-.Depoimentos hr{
- padding: 0px;
- color: black;
+.Depoimentos hr {
+    padding: 0px;
+    color: black;
 }
