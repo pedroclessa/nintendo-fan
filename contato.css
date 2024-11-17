@@ -1,0 +1,152 @@
+/* CSS Global */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que o footer fique na parte inferior */
+    padding-bottom: 80px; /* Espaço para o footer */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header img, footer img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav {
+    margin-left: auto; /* Puxa o menu para a direita */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* FORMULÁRIO */
+form {
+    padding: 100px 20px 60px; /* Padding superior para afastar do header */
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #cc0000;
+}
+
+/* FOOTER */
+footer {
+    background-color: #e60012;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start; /* Mantém os itens na esquerda */
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-text {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-link {
+    margin-left: auto;
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+h1{
+    text-align: center;
+    color: red;
+    padding-bottom: 50px;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato com JavaScript</title>
+    <link rel="stylesheet" href="contato.css" />
+    <script defer src="email.js"></script>
+  </head>
+  <body>
+    <header>
+        <img src="imgs/nintendo.png" alt="Logo Nintendo" />
+        <nav>
+            <ul>
+                <li><a href="">Suporte</a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="imgs/https://www.nintendo.com/pt-br/store/games/">Acesse Nossa Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form
+      action="https://formsubmit.co/ajax/pedrocaetanolessa@gmail.com"
+      method="POST"
+      data-form
+    >
+        <h1>Fale Conosco</h1>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+      <button type="submit" data-button>Enviar</button>
+    </form>
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-logo">
+                <img src="imgs/image.png" alt="Logo">
+            </ul>
+            <ul class="footer-text">
+                <p>© Nintendo. Os jogos são propriedade de seus respectivos donos. Nintendo of America Inc. A sede está localizada em Redmond, Washington (EUA).</p>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

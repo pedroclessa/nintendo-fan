@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header img, footer img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.Destaques .swiper {
+    width: 100%; /* Garante que o swiper ocupe 100% da largura disponível */
+    max-width: 900px; /* Define uma largura máxima para o swiper */
+    height: 600px; /* Altura fixa para manter a proporção */
+    margin: 50px auto;
+    position: relative;
+    border-radius: 40px;
+}
+
+.Destaques h1{
+    color: red;
+    text-align: center;
+}
+
+.Destaques .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.Destaques .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 40px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .Destaques .swiper {
+        height: 400px; /* Ajusta a altura para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .Destaques .swiper {
+        height: 300px; /* Ajusta a altura para telas muito pequenas */
+    }
+}
+
+.container {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.container h1 {
+    color: red;
+    margin: 20px 0;
+}
+
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;  /* Aumenta o tamanho da fonte para dar mais destaque */
+    font-weight: 700;  /* Torna o texto mais grosso para maior contraste */
+    font-style: italic;
+    transition: all 0.5s;
+    color: black;  /* Deixa o texto preto */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Adiciona sombra branca ao texto para destacá-lo */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras para um visual mais impactante */
+}
+
+.card-jogos .content, .card-consoles .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-jogos:hover .content, .card-consoles:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+}
+
+.card-jogos .arrow, .card-consoles .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.card-jogos:hover .arrow, .card-consoles:hover .arrow {
+    transform: rotate(0);
+}
+
+.card-jogos .img {
+    background-image: url('imgs/capa.jpg'); /* Exemplo de imagem para "Jogos" */
+}
+
+.card-consoles .img {
+    background-image: url('imgs/linha-do-tempo-nintendo.webp'); /* Exemplo de imagem para "Consoles" */
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .Cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Serviços h1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.container img {
+    border-radius: 50px;
+}
+
+.console img {
+    justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 25px;
+    height: 25px;
+    color: red;
+    border: 1px solid transparent;
+}
+
+.swiper-button-prev::after {
+    content: '\f053';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    color: red;
+}
+
+.swiper-button-next::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    color: red;
+}
+
+.depoimentos {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 32px 8%;
+    padding-bottom: 40px;  /* Adiciona 40px de espaço abaixo da seção de depoimentos */
+}
+
+.depoimentos_header {
+    text-align: center;
+}
+
+.depoimentos_header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
+.depoimentos_header h2 {
+    color: #111928;
+    font-size: 40px;
+}
+
+.depoimentos_header p {
+    color: #637381;
+    font-size: 16px;
+    max-width: 485px;
+}
+
+.depoimentos .swiper {
+    width: 650px;  
+    height: 450px; 
+    padding-bottom: 60px;
+    border-radius: 40px;
+}
+
+.depoimentos .swiper-slide {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.07);
+    padding: 34px;
+    border-radius: 12px;
+}
+
+.testimonial-rate {
+    display: flex;
+    gap: 2px;
+}
+
+.testimonial-rate i {
+    color: #f9b707;
+    padding-bottom: 10px;
+}
+
+.testimonial-quote {
+    color: #637381;
+    font-size: 16px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+hr {
+    padding: 40px;
+}
+
+h1 {
+    color: red;
+}
+
+footer {
+    background-color: #e60012;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Alinha o conteúdo verticalmente */
+    gap: 40px;                /* Espaçamento entre os itens */
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-text {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;    /* Garante que o texto seja centralizado */
+}
+
+footer .footer-link {
+    margin-left: auto; /* Isso coloca o link à direita */
+}
+
+footer .footer-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-link {
+        margin-top: 10px; 
+    }
+}
+
+.Depoimentos{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.Depoimentos hr{
+ padding: 0px;
+ color: black;
+}
